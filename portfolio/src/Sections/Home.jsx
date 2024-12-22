@@ -2,6 +2,8 @@ import React from "react";
 import bg from "../assets/Images/2040596_275310-P5VU87-469.jpg";
 import astronaut from "../assets/Images/rb_38616.png";
 import Typewriter from "typewriter-effect";
+import { Button } from "flowbite-react";
+import Resume from "../assets/resume/Aviral_asthana_Cl.pdf";
 const Home = () => (
   <div className="relative min-h-screen w-full overflow-hidden group">
     <div className="absolute inset-0 w-full h-full transition-all duration-500 group-hover:blur-sm">
@@ -35,8 +37,8 @@ const Home = () => (
             I am a Back-End / Full-Stack Developer. I have experience in
             developing web applications using Node.js, Express.js, and React.js.
           </p>
+          <Button gradientDuoTone="purpleToPink" className="mt-4 w-full" as="a" href={Resume} download="myfile">Resume</Button>
         </div>
-
         <div className="flex">
           <img
             src={astronaut}
